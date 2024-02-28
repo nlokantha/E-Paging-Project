@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/header_bg"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewGuestName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Guest Name ( 36 Characters )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/textViewFlightNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Flight Number ( 7 Characters )"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGuestName" />
+
+    <EditText
+        android:id="@+id/editTextFlightNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFlightNumber" />
+
+    <EditText
+        android:id="@+id/editTextGuestName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGuestName" />
+
+    <TextView
+        android:id="@+id/textViewArrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Arrival Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFlightNumber" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUpdateBoard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Update e-Paging Board"
+        android:background="@drawable/button_bg"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="@drawable/button_bg"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="653dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:background="@drawable/button_bg"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            tools:layout_editor_absoluteX="266dp"
+            tools:layout_editor_absoluteY="656dp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextArrivalTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewArrivalTime" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
